@@ -1,16 +1,16 @@
-# react-native-grid
+# react-native-gridstrap
 The Bootstrap grid implementation for React Native
 
 ## Installation
-`yarn add @zaguini/react-native-grid`
+`yarn add react-native-gridstrap`
 or
-`npm install @zaguini/react-native-grid --save`
+`npm install react-native-gridstrap --save`
 
 ## Usage
 Please take a look at the bro-tip below.
 
 ```js
-import makeGrid from '@zaguini/react-native-grid'
+import makeGrid from 'react-native-gridstrap'
 
 const Grid = makeGrid(16) // gutter size
 ```
@@ -66,7 +66,7 @@ Generate the grid in another file, then just include it in your views.
 
 Create a `grid.js` file:
 ```js
-import makeGrid from '@zaguini/react-native-grid'
+import makeGrid from 'react-native-gridstrap'
 
 export const { Container, Row, Col, styles } = makeGrid(16)
 ```
@@ -89,4 +89,3 @@ class MyView extends React.PureComponent {
   }
 }
 ```
-

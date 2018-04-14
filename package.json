@@ -1,24 +1,24 @@
 {
-  "name": "@zaguini/react-native-grid",
+  "name": "react-native-gridstrap",
   "description": "The Bootstrap grid implementation for React Native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "author": "Luis Felipe Zaguini <luisfelipezaguini@gmail.com> (https://github.com/zaguini)",
   "license": "MIT",
-  "homepage": "https://github.com/zaguini/react-native-grid",
+  "homepage": "https://github.com/zaguini/react-native-gridstrap",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zaguini/react-native-grid.git"
+    "url": "https://github.com/zaguini/react-native-gridstrap.git"
   },
   "bugs": {
-    "url": "https://github.com/zaguini/react-native-grid/issues",
+    "url": "https://github.com/zaguini/react-native-gridstrap/issues",
     "email": "luisfelipezaguini@gmail.com"
   },
   "keywords": [
     "react",
     "react-native",
     "react-component",
-    "react-native-grid",
+    "react-native-gridstrap",
     "grid",
     "boostrap",
     "container",
