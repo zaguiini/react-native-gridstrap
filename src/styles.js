@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-const sizes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const sizes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const positions = ['Left', 'Right', 'Top', 'Bottom', 'Horizontal', 'Vertical']
 
 function getVariations(attribute, gutterSize) {
@@ -9,7 +9,7 @@ function getVariations(attribute, gutterSize) {
   sizes.forEach((size) => {
     positions.forEach((position) => {
       for(let i = 0.25; i <= 1; i += 0.25) {
-        const variation = size * i
+        const variation = size === 0 ? i : size * i
 
         let attributeName = attribute.charAt(0)
         attributeName += position.charAt(0).toLowerCase()

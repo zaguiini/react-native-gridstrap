@@ -1,7 +1,7 @@
 {
   "name": "react-native-gridstrap",
   "description": "The Bootstrap grid implementation for React Native",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.js",
   "author": "Luis Felipe Zaguini <luisfelipezaguini@gmail.com> (https://github.com/zaguini)",
   "license": "MIT",
