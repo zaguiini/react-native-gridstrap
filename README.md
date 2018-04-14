@@ -19,21 +19,21 @@ The result of the `makeGrid` function is an `Object` with the following properti
 - The `Container`, `Row` and `Col` components:
 ```js
 class MyView extends React.PureComponent {
-	...
-	render() {
-		return (
-			<Grid.Container>
-				<Grid.Row>
-					<Grid.Col>
-						<Text>Hey, it works.</Text>
-					</Grid.Col>
-					<Grid.Col>
-						<Text>Yes! Sure it does.</Text>
-					</Grid.Col>
-				</Grid.row>
-			</Grid.Container>
-		)
-	}
+  ...
+  render() {
+    return (
+      <Grid.Container>
+        <Grid.Row>
+          <Grid.Col>
+            <Text>Hey, it works.</Text>
+          </Grid.Col>
+          <Grid.Col>
+            <Text>Yes! Sure it does.</Text>
+          </Grid.Col>
+        </Grid.row>
+      </Grid.Container>
+    )
+  }
 }
 ```
 - A set of margin and padding styles, following the gutter size definition, defined in the `styles` object. Variation is from `1` to `10` and includes padding and margin left, top, bottom, right, horizontal and vertical.
@@ -45,6 +45,7 @@ styles.ml975
 Each variation has the `0.25`, `0.5`, `0.75` and, of course, the `1` size. Without the decimal dot.
 
 ## Component props
+
 All the components might include the `style` prop to better customization if necessary.
 
 ### Container
@@ -57,7 +58,7 @@ No additional props.
 ### Col
 #### offset
 Include this prop, as a `number`, to make an offset column - just like the `.col-offset` on the web. The offset is defined as the `flex` attribute in the component style. Of course, if this prop is specified, no `child` component will be rendered.
-#### proportion
+### proportion
 How much space from the row will this `col` take. Defaults to `1`.
 
 ## Bro tip
@@ -75,16 +76,17 @@ And then, in `MyView.js`:
 import { Container, Row, Col, styles } from './grid'
 
 class MyView extends React.PureComponent {
-	render() {
-		return (
-			<Container>
-				<Row style={styles.mt5}>
-					<Col>
-						<Text>It works!</Text>
-					</Col>
-				</Row>
-			</Container>
-		)
-	}
+  render() {
+    return (
+      <Container fluid>
+        <Row style={styles.mt5}>
+          <Col>
+            <Text>It works!</Text>
+          </Col>
+        </Row>
+      </Container>
+    )
+  }
 }
 ```
+
