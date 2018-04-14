@@ -58,7 +58,7 @@ No additional props.
 ### Col
 #### offset
 Include this prop, as a `number`, to make an offset column - just like the `.col-offset` on the web. The offset is defined as the `flex` attribute in the component style. Of course, if this prop is specified, no `child` component will be rendered.
-### proportion
+#### proportion
 How much space from the row will this `col` take. Defaults to `1`.
 
 ## Bro tip
